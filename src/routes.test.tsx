@@ -15,7 +15,7 @@ describe('routes', () => {
     it('renders the home page', () => {
       renderRouter('/');
 
-      screen.getByText(/hello/);
+      screen.getByText(/welcome/);
     });
   });
 
@@ -24,6 +24,14 @@ describe('routes', () => {
       renderRouter('/about');
 
       screen.getByText(/ha/);
+    });
+  });
+
+  context('when the current path is “/logout”', () => {
+    it('renders the home page', () => {
+      renderRouter('/logout');
+
+      screen.getByText(/welcome/);
     });
   });
 });

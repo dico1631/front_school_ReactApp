@@ -1,6 +1,7 @@
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import LogoutPage from './pages/LogoutPage';
 
 const routes = [
   {
@@ -8,6 +9,7 @@ const routes = [
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/about', element: <AboutPage /> },
+      { path: '/logout', element: <LogoutPage /> },
     ],
   },
 ];
