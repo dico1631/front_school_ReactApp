@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // p tag
 const Paragraph = styled.p`
@@ -18,33 +18,33 @@ const BigParagraph = styled(Paragraph)`
     }
 `;
 
-function HelloWorld({ className }: React.HTMLAttributes<HTMLElement>){
-    return(
-        <BigParagraph className={className}>
-            Hello, world
-            <strong>!</strong>
-        </BigParagraph>
-    );
-};
+function HelloWorld({ className }: React.HTMLAttributes<HTMLElement>) {
+  return (
+    <BigParagraph className={className}>
+      Hello, world
+      <strong>!</strong>
+    </BigParagraph>
+  );
+}
 
 const SmallHelloWorld = styled(HelloWorld)`
     font-size: 0.1em;
 `;
 
-export default function Greeting(){
-    return(
-        <div>
-            <Paragraph>
-                Hello, world
-                <strong>!</strong>
-            </Paragraph>
+export default function Greeting() {
+  return (
+    <div>
+      <Paragraph>
+        Hello, world
+        <strong>!</strong>
+      </Paragraph>
 
-            <BigParagraph>
-                Hello, world
-                <strong>!</strong>
-            </BigParagraph>
+      <BigParagraph>
+        Hello, world
+        <strong>!</strong>
+      </BigParagraph>
 
-            <SmallHelloWorld />
-        </div>
-    );
+      <SmallHelloWorld />
+    </div>
+  );
 }
